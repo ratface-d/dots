@@ -1,0 +1,508 @@
+#+TITLE: Rats scratchpad
+#+AUTHOR:  Rat
+#+DESCRIPTION: my personal config
+#+STARTUP: overview
+#+OPTIONS: toc:2
+
+* Priority loading :)
+
+** Package Manager
+#+begin_src emacs-lisp
+
+(require 'package)
+
+(setq package-archives '(("melpa" . "https://melpa.org/packages/")
+                         ("org" . "https://orgmode.org/elpa/")
+                         ("elpa" . "https://elpa.gnu.org/packages/")))
+
+(package-initialize)
+(unless package-archive-contents
+  (package-refresh-contents))
+
+#+end_src
+
+** Initialize use-package on non-Linux platforms
+#+begin_src emacs-lisp
+
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
+
+(require 'use-package)
+(setq use-package-always-ensure t)
+
+#+end_src
+
+** Auto-update packages
+
+#+begin_src emacs-lisp
+
+(use-package auto-package-update
+  :custom
+  (auto-package-update-interval 7)
+  (auto-package-update-prompt-before-update t)
+  (auto-package-update-hide-results t)
+  :config
+  (auto-package-update-maybe)
+  (auto-package-update-at-time "09:00"))
+
+
+#+end_src
+
+
+* General Packages :)
+
+** File Searching
+
+*** Ivy
+
+
+#+begin_src emacs-lisp
+
+  (use-package ivy
+    :demand
+    :defer t
+    :diminish
+    :bind (("C-s" . swiper)
+	   :map ivy-minibuffer-map
+	   ("TAB" . ivy-alt-done)
+	   ("C-l" . ivy-alt-done)
+	   ("C-j" . ivy-next-line)
+	   ("C-k" . ivy-previous-line)
+	   :map ivy-switch-buffer-map
+	   ("C-k" . ivy-previous-line)
+	   ("C-l" . ivy-done)
+	   ("C-d" . ivy-switch-buffer-kill)
+	   :map ivy-reverse-i-search-map
+	   ("C-k" . ivy-previous-line)
+	   ("C-d" . ivy-reverse-i-search-kill))
+    :config
+    (ivy-mode 1))
+
+#+end_src
+
+**** Ivy Prescient
+#+begin_src emacs-lisp
+#+end_src
+*** Counsel
+
+#+begin_src emacs-lisp
+
+  (use-package counsel
+   :ensure t
+   :demand t
+   :defer t
+   :bind (("M-x" . counsel-M-x)
+	  ("C-x C-f" . counsel-find-file)
+	  ("C-c g" . counsel-git)
+	  ("C-c s" . counsel-ag))
+   :config
+   (counsel-mode 1))  ;; Enable counsel mode 
+
+#+end_src
+
+*** Swiper
+
+
+#+begin_src emacs-lisp
+
+(use-package swiper
+  :defer t
+  :bind (("C-s" . swiper)  ;; Bind swiper to a keybinding
+         ("C-r" . swiper)) ;; Optional: Bind swiper for reverse search
+  )
+  
+#+end_src
+
+
+** Prettification
+
+*** Modus Themes
+
+#+begin_src emacs-lisp
+
+(use-package modus-themes
+  :ensure t
+  :config
+  (load-theme 'modus-vivendi t)
+  (setq modus-themes-bold-constructs t)  ;; Example configuration option
+  (setq modus-themes-slanted-constructs t)  ;; Example configuration option
+  (setq modus-themes-intense-mouseovers t)  ;; Example configuration option
+)
+
+#+end_src
+
+*** Gruvbox
+
+#+begin_src emacs-lisp
+
+(use-package gruvbox-theme
+:ensure t)
+
+#+end_src
+
+
+*** doom-modeline
+#+begin_src emacs-lisp
+
+  (use-package doom-modeline
+    :ensure t
+    :init (doom-modeline-mode 1)
+    :custom ((doom-modeline-height 15)))
+#+end_src
+
+*** Evil Mode
+#+begin_src emacs-lisp
+  ;; Download Evil
+  (unless (package-installed-p 'evil)
+    (package-install 'evil))
+
+  ;; Enable Evil
+  (require 'evil)
+  (evil-mode 1)
+#+end_src
+
+
+*** All The Icons
+
+#+begin_src emacs-lisp
+
+;;first time this is installed also be sure to run "M-x all-the-icons-install-fonts" so that doom-modeline displays correctly
+  
+  (use-package all-the-icons)  
+
+#+end_src
+
+*** org-superstar
+
+
+#+begin_src emacs-lisp
+  (use-package org-superstar)
+
+  (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
+#+end_src
+
+*** Rainbow Delimiters
+
+#+begin_src emacs-lisp
+  
+  (use-package rainbow-delimiters
+   :hook (prog-mode . rainbow-delimiters-mode))
+
+#+end_src
+
+
+** QOL
+
+*** Which-Key
+#+begin_src emacs-lisp
+
+  (use-package which-key
+  :init (which-key-mode)
+  :defer t
+  :diminish which-key-mode
+  :config
+  (setq which-key-idle-delay 0.3))
+
+#+end_src
+
+*** dashboard
+
+#+begin_src emacs-lisp
+
+	(use-package dashboard
+	  :ensure t
+	  :config
+	  (dashboard-setup-startup-hook))
+
+	(require 'dashboard)
+	(dashboard-setup-startup-hook)
+
+	;; Customize the dashboard appearance and behavior
+	(setq dashboard-banner-logo-title "EMACS! EMACS! EMACS! EMACS! EMACS!"
+
+         dashboard-startup-banner 'logo
+      ;;(setq dashboard-startup-banner "~/.emacs.d/emacs-dash.png")
+	   dashboard-items '((recents . 5)
+       (bookmarks . 5)))
+
+	;; Set the dashboard as the default startup screen
+	(setq initial-buffer-choice (lambda () (get-buffer "*dashboard*")))
+
+
+#+end_src
+
+*** Prescient
+
+#+begin_src emacs-lisp
+
+(use-package prescient
+  :after counsel
+  :custom
+  (ivy-prescient-enable-filtering nil)
+  :config
+  (prescient-persist-mode 1)
+  (ivy-prescient-mode 1))
+
+#+end_src
+
+**** Prescient Additions
+#+begin_src emacs-lisp
+
+  (use-package ivy-prescient
+    :ensure t
+    :after (ivy prescient)
+    :config
+    (ivy-prescient-mode 1))
+  
+#+end_src
+
+*** Org Settings
+#+begin_src emacs-lisp
+
+(with-eval-after-load 'org
+  ;; This is needed as of Org 9.2
+  (require 'org-tempo)
+
+  (add-to-list 'org-structure-template-alist '("sh" . "src shell"))
+  (add-to-list 'org-structure-template-alist '("el" . "src emacs-lisp"))
+  (add-to-list 'org-structure-template-alist '("py" . "src python")))
+
+#+end_src
+
+
+
+
+** Coding / Dev Help
+
+*** Company (completion snippets)
+
+#+begin_src emacs-lisp
+
+  (use-package company
+    :ensure t
+    :defer t
+    :config
+    (global-company-mode)
+    (setq company-idle-delay 0.2
+	  company-minimum-prefix-length 1))
+
+
+  (require 'company)
+
+#+end_src
+
+*** LSP-MODE
+#+begin_src emacs-lisp
+
+	  (require 'use-package)
+
+	  (use-package lsp-mode
+	    :ensure t
+	    :defer t
+	    :hook ((prog-mode . lsp)
+		    (c-mode . lsp)))
+	    :config
+	    (setq lsp-enable-snippet t)
+            (setq lsp-pylsp-server-command '("pylsp"))
+    
+	  (use-package lsp-ui
+	    :ensure t
+	    :after lsp-mode
+	    :config
+	    (setq lsp-ui-doc-enable t
+		  lsp-ui-sideline-enable t
+		  lsp-ui-imenu-enable t))
+#+end_src
+
+**** Lang support / Babel Settings
+#+begin_src emacs-lisp
+
+      (require 'org)
+      (require 'ob-python)
+      (use-package lua-mode)
+      (use-package markdown-mode)
+      (use-package python-mode)
+      (use-package css-mode)
+      (require 'ob-shell)
+
+    (org-babel-do-load-languages
+     'org-babel-load-languages
+     '((python . t)
+       (shell . t)
+       (lua . t)
+       (C . t)
+       (css . t)
+       ;; add other languages here
+       ))
+
+  (setq org-babel-python-command "python3")
+
+  (setq org-confirm-babel-evaluate nil)
+
+#+end_src
+
+
+
+*** Magit
+
+#+begin_src emacs-lisp
+
+  (use-package magit
+    :defer t
+    :ensure t)
+
+#+end_src
+
+*** Projectile
+
+#+begin_src emacs-lisp
+
+  (use-package projectile
+   :ensure t
+   :defer t
+   :diminish projectile-mode
+   :config (projectile-mode)
+   :bind-keymap
+   ("C-c p" . projectile-command-map)
+   :init
+   (when (file-directory-p "~/notes/code")
+     (setq projectile-project-search-path '("~/notes/code")))
+   (setq projectile-switch-project-action #'projectile-dired))
+
+#+end_src
+
+
+* General Settings :)
+#+begin_src emacs-lisp
+
+   (setq inhibit-startup-message t)
+
+   (setq ring-bell-function 'ignore)
+
+   (setq custom-safe-themes t)
+
+   ;; (setq visible-bell t)
+
+   (scroll-bar-mode -1) ;disable scrollbar :)
+
+   (tool-bar-mode -1) ;disables the toolbar :)
+
+   (tooltip-mode -1) ;disables tooltips :)
+
+   (set-fringe-mode 10) ;gives extra space :)
+
+   (menu-bar-mode -1) ;disable menubar :)
+
+   (set-face-attribute 'default nil :font "FiraCode Nerd Font" :height 145)
+
+   (setq org-hide-leading-stars nil)
+
+   (setq org-superstar-leading-bullet ?\s)
+
+   (setq org-indent-mode-turns-on-hiding-stars nil)
+
+   (setq display-line-numbers-type 'relative)
+
+   (setq inhibit-startup-message t)  ;; Disable startup message
+
+   (setq initial-scratch-message nil)  ;; Clear the scratch buffer message
+
+   (column-number-mode)
+
+   (global-display-line-numbers-mode t)
+
+
+   (dolist (mode
+  '(term-mode-hook
+	eshell-mode-hook))
+   (add-hook mode (lambda () (display-line-numbers-mode 0))))
+
+
+  (setq-default indent-line-function nil)
+
+  (setq-default tab-width 4)
+
+  (setq org-hide-emphasis-markers t)
+
+  (electric-indent-mode -1)
+
+  (setq org-adapt-indentation nil)
+
+  (setq-local indent-line-function nil)
+
+(add-hook 'python-mode-hook
+          (lambda ()
+            (setq-local electric-indent-mode nil)))
+
+(add-hook 'c-mode-common-hook
+          (lambda ()
+            (setq-local electric-indent-mode nil)))
+
+(add-hook 'org-mode-hook (lambda () (electric-indent-mode -1)))
+
+#+end_src
+
+
+** Keybinds
+
+#+begin_src emacs-lisp
+
+  (use-package general
+    :config
+    (general-evil-setup t))
+  
+#+end_src
+
+
+#+begin_src emacs-lisp
+
+(nvmap :prefix "SPC"
+       "p b"   '(ibuffer :which-key "Ibuffer")
+       "p c"   '(clone-indirect-buffer-other-window :which-key "Clone indirect buffer other window")
+       "p k"   '(kill-current-buffer :which-key "Kill current buffer")
+       "p n"   '(next-buffer :which-key "Next buffer")
+       "p p"   '(previous-buffer :which-key "Previous buffer")
+       "p B"   '(ibuffer-list-buffers :which-key "Ibuffer list buffers")
+       "p K"   '(kill-buffer :which-key "Kill buffer"))
+
+#+end_src
+
+
+* Sloptimization
+
+#+begin_src emacs-lisp
+
+  ;; Using garbage magic hack.
+     (use-package gcmh
+       :config
+       (gcmh-mode 1))
+
+    ;; Setting garbage collection threshold
+    (setq gc-cons-threshold 402653184
+	  gc-cons-percentage 0.6)
+
+    ;; Profile emacs startup
+    (add-hook 'emacs-startup-hook
+	      (lambda ()
+		(message "*** Emacs loaded in %s with %d garbage collections."
+			 (format "%.2f seconds"
+				 (float-time
+				  (time-subtract after-init-time before-init-time)))
+			 gcs-done)))
+
+    (setq comp-async-report-warnings-errors nil)
+
+
+;; NOTE: If you want to move everything out of the ~/.emacs.d folder
+;; reliably, set `user-emacs-directory` before loading no-littering!
+;(setq user-emacs-directory "~/.cache/emacs")
+
+(use-package no-littering)
+
+;; no-littering doesn't set this by default so we must place
+;; auto save files in the same path as it uses for sessions
+(setq auto-save-file-name-transforms
+      `((".*" ,(no-littering-expand-var-file-name "auto-save/") t)))
+
+  
+#+end_src
