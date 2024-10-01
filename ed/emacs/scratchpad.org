@@ -116,6 +116,7 @@
 
 ** Prettification
 
+
 *** Modus Themes
 
 #+begin_src emacs-lisp
@@ -150,7 +151,9 @@
 
 
 
+
 *** doom-modeline
+
 #+begin_src emacs-lisp
 
   (use-package doom-modeline
@@ -421,7 +424,7 @@
 
 ;; FONTS
 
-   (set-face-attribute 'default nil :font "FiraCode Nerd Font" :height 170)
+   (set-face-attribute 'default nil :font "FiraCode Nerd Font" :height 135)
 
 ;; FONTS
 
