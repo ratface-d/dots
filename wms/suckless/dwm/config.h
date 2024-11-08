@@ -19,12 +19,12 @@ static const int topbar                   = 1;      /* 0 means bottom bar */
 #define ICONSPACING                         5       /* space between icon and title */
 #define SHOWWINICON                         1       /* 0 means no winicon */
 static const char *fonts[]                = { "FiraCode Nerd Font Mono:size=16" };
-static const char normbordercolor[]       = "#d79921";
+static const char normbordercolor[]       = "#FE249A";
 static const char normbgcolor[]           = "#282a36";
-static const char normfgcolor[]           = "#d79921";
-static const char selbordercolor[]        = "#d79921";
+static const char normfgcolor[]           = "#FE249A";
+static const char selbordercolor[]        = "#FE249A";
 static const char selbgcolor[]            = "#282a36";
-static const char selfgcolor[]            = "#d79921";
+static const char selfgcolor[]            = "#FE249A";
 
 static const char *mutecmd[] = { "pactl", "set-sink-mute", "0", "toggle", NULL };
 static const char *volupcmd[] = { "pactl", "set-sink-volume", "0", "+5%", NULL };
@@ -39,14 +39,14 @@ static const char *colors[][3]      = {
 
 static const char *const autostart[] = {
   "picom", "--animations", "-b", NULL,
-  "sh", "-c", "feh --randomize --bg-fill /home/rat/dotfiles-bbg/walls/cool/*", NULL,
+  "sh", "-c", "feh --randomize --bg-fill /home/rat/dots/walls/*", NULL,
   "synergy", NULL,
   "slstatus", NULL,
   NULL /* terminate */
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
 
 static const char ptagf[] = "[%s %s]";  /* format of a tag label */
 static const char etagf[] = "[%s]";     /* format of an empty tag */
@@ -88,17 +88,20 @@ static const Layout layouts[] = {
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 #define STATUSBAR "dwmblocks"
+
 /* commands */
-static const char *launchercmd[] = { "rofi", "-show", "drun", NULL };
+static const char *webcmd[] = { "zen-browser", NULL};
 static const char *termcmd[]  = { "st", NULL };
+static const char *edcmd[] = { "emacsclient", "-c", "-n", NULL };
 
 static Key keys[] = {
 	/* modifier                     key            function                argument */
 	{ 0, XF86XK_AudioMute, spawn, {.v = mutecmd } },
 	{ 0, XF86XK_AudioLowerVolume, spawn, {.v = voldowncmd } },
 	{ 0, XF86XK_AudioRaiseVolume, spawn, {.v = volupcmd } },
-	{ MODKEY,                       XK_p,          spawn,                  {.v = launchercmd} }, // spawn rofi for launching other programs
+	{ MODKEY,                       XK_p,          spawn,                  {.v = webcmd} }, // spawn internet
 	{ MODKEY,                       XK_i,          spawn,                  {.v = termcmd } }, // spawn a terminal
+	{ MODKEY,                       XK_e,          spawn,                  {.v = edcmd } }, // spawn emacs
 	{ MODKEY,                       XK_j,          focusstack,             {.i = +1 } }, // focus on the next client in the stack
 	{ MODKEY,                       XK_k,          focusstack,             {.i = -1 } }, // focus on the previous client in the stack
 	{ MODKEY,                       XK_h,          setmfact,               {.f = -0.05} }, // decrease the size of the master area compared to the stack area(s)

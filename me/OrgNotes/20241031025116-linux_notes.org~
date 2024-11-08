@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       589ef265-09f0-43e7-949b-15e98a1060a4
+:END:
+#+title: linux notes
+
+to have picom autostart put this is *~/.xinitrc:*
+picom ~/.config/picom &

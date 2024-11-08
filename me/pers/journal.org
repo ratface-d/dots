@@ -1,0 +1,323 @@
+#+TITLE: Rats journal
+#+AUTHOR:  Rat
+#+DESCRIPTION: my notes. that is all.
+#+STARTUP: overview
+#+OPTIONS: toc:2
+
+* <2024-10-10 Thu>
+
+Helloooooooooo, I'm on nixos right now, obviously (it's only obvious because I installed it earlier today and I 
+also i dont back this file up anywhere even though i def should) anyway, thats it for now, just wanted to get the 
+file started
+
+oh, hello i though that i had written the previous entry yesterday, clearly not. I'm not entirely sure why I'm 
+writing right now, well, not exactly anyway, I know that i feel vaguely emotional but i cant pinpoint what the 
+emotion is. I think it's sadness? but that doesnt feel exactly right, it doesnt feel debilitating enough to be 
+sadness but if i'm not sad then what emotion is this? maybe it'll help if i go back and think about when the 
+feelings first started.... but when was that? today? yesterday? last week? I dont know. i think thats it for now
+i dont have anything else to write, I might go outside, walk around listen to some music, but probably not.
+
+
+* <2024-10-12 Sat>
+
+hello, I'm a little surprised that im still on nixos but, I've enjoyed it, i really love how the config file approach
+to package management, I'm supposed to help alex on sunday with a job, gonna make like, 50 bucks, looking at games 
+on gog, if i dont find anything I'm gonna just buy and 8th tomorrow, or on monday or whatever
+
+
+* <2024-10-13 Sun>
+
+hello again, wow, maybe the longest one of these files has lasted, pretty impressive. anyway, just marking that
+today happened, worked with alex, made 50 bucks, dont know what to get? probably headphones? but? i dont know. maybe
+buy some albums? maybe... video game? who knows. anyway, im gonna try and do some programming now bye bye.
+
+
+
+* <2024-10-16 Wed>
+
+hello, it's been, a while, dont really know why. just kinda, havent been using the laptop.... But thats about to 
+change! i hope. I did  a job with alex on sunday, made 50 bucks, spent 5 on weed and i had been saving it since then
+which for me, is crazy, i never hold on to money for long. anyway, i just spent 20 bucks on 16gb of ram for this 
+laptop. should be pretty a substantial upgrade. I'm hoping it'll lead to more laptop usage. but i also just need to 
+practice coding more. I havent done anything really since switching to nixos. which is bad.... planning on spending
+the next few days updating my dots, pushing shit to git, maybe looking for music, and hopefully, hopefully, doing 
+some coding. also maybe some typing practice, im still so shit at it lmao. also, i havent been writing as much, i 
+dont know why. i enjoy it.
+
+ok so, currently the plan is to write  good i3 config, that way, i can switch between xorg and wayland whenever i 
+want, depending on if i'm on freebsd, or debian, or wahtever else. which is cool, i think. also. as far as what 
+distro i'm going to use. i dont know what i'm going to use. i'm leaning towards nixos. but. i'm going to try gentoo
+as well because, i mean, i have to with 16gbs of ram right? same cpu tho. lol. we'll see what happens on saturday 
+i guess. also download fallout 2 rn, should be fun. maybe maybe maybe i buy another game on gog maybe maybe a steam 
+game. we'll see. 
+
+
+
+* <2024-10-17 Thu>
+
+hello, i was going to start programming, but, i wanted to listen to music while
+i did it, and i decided to put on johnny cash, but now i just wanna listen to 
+the music, i know i should just program, but, the music is really good, so i 
+think what i'm gonna do is, put look around the kitchen, maybe make some food,
+and then, when the wow factor has worn off, ill listen to the albums, but keep
+programming, i dont think i'm gonna be consistent with the language though, b/c
+i think i wanna start looking at C, elisp, lua, and anything else that sounds 
+fun, i'll try to keep a list of the languages i wanna look at but, i dont think
+i'm going to
+
+
+
+* <2024-10-18 Fri>
+
+hello, tomorrow at some point the ram will get here. I'm excited for that. should be fun to play with. got weed 
+earlier today. spent, 15$ on some flower and some paper. basically. i'm broke. cause i gave tia 5 dollars. so. i 
+have. 2? maybe 3. which is fine. i'm not. complaining.  it's just a fact of life bro. i got 3 dollars. honestly, 
+might buy the void walker arsenal for dishonored if i have enough. just cause why not. anyway. i'm not sure what to
+write about. oh shit wait. i got a job interview on tuesday. at red robin to be a dishwasher. i hope i get it. would
+be a good first job i think. and the pay was. 19$ an hour? i think? so thats cool. i'm gonna try doing some 
+programming tonight. brush up on conditional statements. should be fun. i'll probably take notes in this file,
+actually. not this section, obviously, but, this file. which i should probably save somewhere. alright. bye bye.
+
+oh actually, i forgot to mention, listened to Live At Folsom Prison today for the first time. good album. might
+listen to more Johnny Cash. maybe. if i remember. cause i also wanna relisten to Indiscipline. Discipline? the 
+King Crimson Album. fuck i dont remember the name. whatever.
+
+so i was programming but i figured i'd do typing tests instead. or maybe just watch coraline
+
+
+* <2024-10-20 Sun>
+
+hello, it's 12:30 so i'm counting this as being written on a sunday. the ram came in today. it's good. pretty fun
+also i hopped over to arch. probably gonna switch to gentoo soon. probably a couple more days in arch first though.
+just for fun. ok thats it. just wanted to update this when i got the ram installed. gonna play thief now. bye bye
+
+
+* <2024-10-20 Sun>
+
+hello, it's sunday interview on tuesday hopefully have a job. guess we'll see. anyway. probably gonna install
+gentoo in a second. hope i can get it to connect to the internet. if it does. i'm not gonna hop to another distro
+for a little while. probably a few months. will update this further when i'm on gentoo
+
+
+
+* <2024-10-30 Wed>
+
+hello, it's. been a minute. whats up? your a file. you cant respond. anyway. hello. sorry it's been
+so long. i just havent been on the computer lately. switched to arch. might switch to gentoo. idk
+maybe. we'll see. for now i will. wait. 
+
+i think i will learn some basic bash scripts. maybe. maybe just stick to python. we'll see.
+
+
+* <2024-10-31 Thu>
+
+woohoo. learning org-roam. will update later. also planning on not sleeping for a few days. we'll see what happens
+
+I am adding more keybinds to org-roam. also learning more of it's functionality for example,
+i can hit C-c o c if i have part of a Nodes name typed out, and it will autocomplete it for me.
+for example, if i wanted to reach my [[id:589ef265-09f0-43e7-949b-15e98a1060a4][linux notes]] which is very cool. it's like making my own 
+personal wiki. my own little knowledge collection. i think. i need to figure out if org-roam is actually right for me
+because. while it is very cool. and i like it a lot. i'm not sure how it fits into my workflow. because. it is meant
+to make note taking easier. so i could. for example. if i wanted to start writing about music and what i'm doing with
+it i could do a quick little [[id:be97a6e7-ed8e-42f5-90c0-ba6988a63610][music]] and then there it is. then i could click it and badabind badaboom. im in the music
+file. but. it seems like just one more package? like sure, it's cool that i can add links between them. but. couldnt
+i just organize them in different directories and subdirectories? idk. i'll keep it. mess with it a little more. 
+we'll see what happens.
+
+
+maybe i'm doing it wrong. hmm. hold on.
+
+ok so, i made a new "journal" file. so. my thinking is. i will just throw links in random places 
+(not random, just not super often) in here. and i think i will also create a specfic file for more "intellectual" 
+things. and i just wont think to those files in here? unless relevant ig. idk i think this could be fun. guess we'll 
+see.
+
+
+* <2024-10-31 Thu>
+
+hello. i fell asleep lol. it is 3 pm. also it's halloween. which is. cool. i guess. idk. it's 
+whatever. gonna try and do something productive today. might try and listen to some new music. 
+update [[id:be97a6e7-ed8e-42f5-90c0-ba6988a63610][music]] so that i dont feel like roam is a not super useful package to have. might do some
+typing tests. we'll see. bye bye for now. 
+
+hello. it is 10 pm right now. i'm not doing very good. emotionally. i mean. i feel like shit. 
+i hate how much attention i need in order to feel like people dont hate me. i mean. i'm sitting
+here doing nothing. but. knowing that my friends are. out. doing things. idk. i know that it's 
+ridiculous to expect people to talk to me all day every day. but. idk. i want attention. which is
+normal. I think. but. whats not normal is how *much* attention that i want. idk. i'll update this
+more later. maybe.
+
+
+* <2024-11-01 Fri>
+
+hello. it is 4 am. idk why im not sleeping. whatever. i enjoy this theme. i will keep it for a
+while. i will theme dwm rq to match it. i still havent really used roam that often. not gonna 
+get rid of it yet. but. probably not for. lets say 3 months. just to give it a proper chance.
+i'm gonna do some coding. should be fun. i'll try and update [[id:847e62f9-e617-41d3-81c3-3994c4d719f4][python]] but we'll see what happens.
+
+hello. it is still friday. except now it is now 1 in the afternoon. i turn 20 in 15 days. idk if i
+really care. like. it's cool. ig. but. idk. i'm not like. super pumped about it or anything.
+
+gonna try and do some light programming and update [[id:847e62f9-e617-41d3-81c3-3994c4d719f4][python]] at least a little bit. do some more work
+on understanding loops
+
+hello. i think this is the most i've ever updated this file in the same day. interesting. anyway.
+I think i should write about how i'm feeling more. i think writing it out here would help. maybe.
+so i guess. on that note. i think i've written this before but i hate how much attention i need. 
+like. it's only been a few hours (5, specifically) since i talked to any of my friends. but. even 
+though it hasnt been that long. i still feel like they hate me and want nothing to do with me. idk
+why I always need someone to be talking to me. i think it's something i need to work on. otherwise
+i think i'll drive all my friends away. which. would suck. still havent done a ton of work in [[id:847e62f9-e617-41d3-81c3-3994c4d719f4][python]]
+either. i started the simple loops section of the website but. it's just so hard to stay focused. 
+maybe i'm just not cut out for programming. no matter how bad i want to do it. idk. like. even now.
+i *want* to work on python. but. i also wanna reformat my emacs config. make things look cleaner. 
+god. i hate myself.
+
+
+
+* <2024-11-02 Sat>
+ 
+hello. i'm gonna try and get rid of evil mode. maybe look at some other packages to replace. will
+update you on how it's going later.
+
+hello. i'm still not using evil-mode. but i also havent really been on the laptop today so. it's 
+not like i've been practicing the default binds yknow. anyway. gonna do some work on using these 
+binds. but first. i wanted to update this. and i guess it's time i talk about the elephant in my 
+brain. do i or do i not like keira. i dont know. i dont think i do. the only reason i'm even 
+questioning this is because i've been thinking about it for so long. and i'm really not sure if I
+do like her. I mean. I'm glad we're friends. and I enjoy talking to her. but. I don't think the 
+feelings are romantic. I think I just want to go out with someone. and i'm misplacing those 
+feelings onto keira. which isn't cool. obviously. yeah. i think that's it. I don't think I like 
+her romantically. even if i did. I am 100% sure that she isn't into me. and even if we did both
+like each other. if we were to go out. I dont think it'd end well. I'm not emotionally intelligent
+enough to be able to help her with any of her problems. and she's got the whole. mostly aromantic
+thing going on. and i'm insecure. so even if we were to go out. i'd never believe that she was 
+actually into me. i'm glad that i wrote this down. who'dve thunk that writing your thoughts out 
+somewhere would help them be more clear. I spend way to much time in my own head. I think I want 
+a partner. that'd be cool i think. or maybe just more friends? idk. i dont know what i want. I
+just know that i feel a near crippling loneliness. and i'm not sure if it's a void that wants to 
+be filled with a romantic partner or if i'd be happy with just having more friends. idk. 
+
+ok. i tried. but i cant. evil mode is just so good. i like it to much. i'm sure that if I really 
+wanted to i could remove it. but. eh. I like it. I like the vim binds. oh well. i'll still see if 
+i cant find more recent replacements of packages i use. specifically trying to replace something 
+like ivy. otherwise. gonna stay up for a minute. do some python stuff.
+
+
+* <2024-11-03 Sun>
+
+hello. it is. 2:13 am. I'm not sure why i'm awake. probably gonna sleep soon. but for now. gonna 
+watch some system crafters. idk. in the last entry i said i was gonna stay up and do some coding. 
+take a guess what I didnt do. i havent done much lately. i feel terrible. whatever. maybe it's 
+time to talk/think about the trans thing. it's just. everytime I try and think about it i just end
+up going "ah i dont care whatever" and moving on. but. i shouldnt. do that. i should. give the 
+idea a proper chance. so I guess. here i go? am I trans. pfft. I dont know. it's hard to say. I 
+think. because it's not like it's as simple as Yes or No. it's an absolutely massive life changing
+revelation. I should probably just. start from the beginning. why do I think that I might be. hmm.
+I think that. I think i might be trans because I hate myself. or at least. I hate my body. my 
+personality isn't so great either. but. that's significantly easier to change. or improve, anyway.
+but. my body. is terrible. i feel like a fat sack of shit. I hate how much body hair I have. I 
+hate. my body. another reason that i think i might be is just because the question comes up so much
+like. if I wasnt. wouldnt I just. not think about it? how often is the average person questioning
+their gender identity? idk. on the other hand. maybe this feeling is just. some kind of fetish?
+like. maybe the only reason i think about crossdressing. or being born a woman. is just because
+i'm a freak with a fetish. besides. even if i *were* to transition. I'd make an ugly fuckin chick. 
+I dont think it'd matter what I wore or how I sounded. I think I'd just. always see myself as the
+same sack of shit. and then there's how this'd affect the people in my life. like sure, my friends
+*probably* wouldnt care. but. if i tell keira or sebastian theres a chance that they just. stop 
+wanting to talk to me. not even necessarily because of what I am. but because of how fucking 
+annoying theyd find me. like. sebastian would (likely) never hear any of my serious thoughts or 
+concerns or anything like that. but. would he even wanna still hang out if I'm doing gay little
+voice training? or dressing completely differently? or what about keira. same shit applies to her.
+the only difference is that keira would *also* have to listen to me fucking whine and complain about
+not passing *constantly* and I dont wanna force my friend to listen to me complain and whine. that's
+kinda fucked. my friends arent there so that I have someone to vent to. theyre there so that I 
+have people to have *fun* with. go out drinking or smoking or whatever the fuck. idk. goodnight. 
+I'll update this more when i wake up. maybe try and think more about the trans thing. fuck.
+
+
+* <2024-11-03 Sun>
+
+hello. it is 9:40 pm. I havent used the laptop much today. idk why. p boring day tbh. not sure
+what to write about really. probably gonna look at some new fonts? then hopefully actually do some
+programming. but we'll see. will update more later.
+
+
+* <2024-11-05 Tue>
+
+hello. i feel like shit. havent done any programming. havent looked for a job since that red robin
+interview. havent looked for a therapist. literally the only 3 things I need to do. and I havent
+done them. I'm worthless. I cant do anything. and yet. instead of doing anything about it. instead
+of taking any steps to remedy the situation. here I am. writing about it in my stupid fucking 
+org doc. i don't know what i'm gonna do. I'm supremely untalented. I have no self-motivation. I'm
+stupid. I insist on insulting and belittling all of my friends. i'm garbage. and again. instead of
+taking any steps to be a better person. i'm sitting here. writing about it. and watching a stupid
+fucking movie. i dont know what i'm gonna do. maybe try and see if I cant finally kill myself.
+i dont know if i'll even be able to do that.i suck at everthing. and after this long. i'm clearly
+bad at suicide too. I still don't know if i'm trans or not. and on top of all of that. the only
+solution I can fucking think of. is to write about it in the goddamned org doc. idk. maybe i'm 
+spending to much time thinking about it. but what am I gonna do? idk. i'm gonna look for a
+therapist. if i don't find anything. i'll look for something to kms with. if that fails. then i'll
+try and do some programming. and when i don't do that. i'll probably go to bed. wake up. and
+continue the cycle tomorrow. maybe block my friends. take myself out of their lives. idk. guess 
+we'll see what happens. first I need to make my bed. on the upside. i think keira was right. 
+writing this shit down. and not just letting it fester in my head. helps. i think. i'm glad I met 
+keira. i'm really glad that we're friends. 
+
+
+* <2024-11-06 Wed>
+
+hello. i didnt update you yesterday. mostly cause i didnt feel like reopening the laptop. anyway.
+i'm doing. slightly better. but not much. I feel like shit cause i dont wake up till like. almost
+3 pm which is obviously not good. but. whatever. not like i have a job i need ot get to. anyway.
+i'm gonna look at some emacs packages. will update this later cause i dont have a lot to write 
+about right now.
+
+going to change some emacs packages. i'll write the changes in [[id:d5f6003e-acfb-4c19-8d84-b052b483620b][emacs notes]] will backup first lol
+
+
+* <2024-11-07 Thu>
+
+hello. I just finished remaking my emacs config. well. not remaking. just. reformatting. but it 
+took signficantly more effort than I think it should've. but it's whatever. I also made some
+small changes to the config. nothing huge. just removed a couple packages. most notably I removed
+evil-mode. idk how long thats gonna last. but. for now. I dont hate it. i do like some of the 
+default binds. and whatever i dont like I can just rebind. for example, I didnt like the command
+to jump to the beginning/end of a buffer. cause they overlap with the bind to make a mark. which
+i found odd. but it's ok. i just rebound it to C-c j t/b. which is awesome. again. we'll see how
+long it lasts. but i do enjoy not having to switch between normal/insert/visual mode. it was just
+a teeny bit of mental overhead that got to me a little bit. other than that. havent done much.
+obviously. i might look for a new emacs theme. I do really enjoy ef-cherie, but. what can i say. 
+it's just a teeny bit boring. but we'll see. anyway thats it for now. will update this more later.
+maybe.
+
+
+* <2024-11-08 Fri>
+
+hello. i tried to move away from ef-cherie but i just havent found a theme that I like as much as
+this one. what did i even do yesterday? i dont really know. i think. it was a pretty normal day.
+watched archer, probably some other shows. I restarted My Name Is Earl. good show. I wish it
+wasnt cancelled. oh well. c'est la vie or whatever those french fucks say. anyway. idk what i'm
+gonna do with this computer time. my sleep schedule is pretty fucked so i'm probably gonna try and
+use this time. not wisely. but. hopefully something productive. maybe some programming. there is 
+that book on C that I have downloaded. if i dont feel like reading. i'll just stick to learning
+python. which would still require reading. oh well. something in french. amiright? my eye is 
+irritating the hell outta me. i turn 20 in 8 days. i'm not that excited about it. which is 
+probably a little weird. i mean, it's supposed to be a big thing. i think? idk. TRANSITION. lol
+actually. that was just meant to be a way for me to transition into the next thing i wanted to
+write about. but. it ended being relevant to said topic. which is funny. anyway. i've thought just
+a tiny bit more about this whole "am i trans" question. and. the more i think about it. the more
+i lean towards a maybe. it's still not a confident yes. but. yknow. anyway. i'm gonna try and do
+some of that programming. after i change this Company start time. having it at like, 0.3 seconds
+is a little annoying. we'll change it to about, .5 or so. see how that works. and as far as the 
+org-roam package. i still havent really used it all that much. i'll do some googling on how other
+people write notes. maybe look at those obsidian guys and how they do it. i feel like i've been 
+writing for a little long here. i might update this later on in the day. I might not. oh also. I 
+still havent reinstalled evil-mode. just doesnt feel necessary right now. i still use vim keys on
+the browser and the terminal, and honestly it's not really confusing switching between my emacs 
+binds and the vim binds. it's a little funny actually using vim b/c i still try and use C-c i to
+save the file instead of :w.
+
+hello. i just woke up like 20 minutes ago. trying to learn some of these emacs binds. i might
+write a couple of the confusing ones in [[id:d5f6003e-acfb-4c19-8d84-b052b483620b][emacs notes]] but we'll see. i still wanna look at those 
+obsidian guys to see how they write notes, i just havent yet. i will right now i think.
