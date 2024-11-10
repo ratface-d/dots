@@ -16,3 +16,17 @@ add Lock = Control_R
 
 and then the xinitrc:
 xmodmap ~/.Xmodmap
+
+git from command line:
+git init
+git config --global user.name "git name"
+git config --global user.email my@email.com
+
+Once logged in simply:
+git add .
+git commit -m 'commit message'
+git push
+
+for dwm:
+i dont have/need the coolautostart patch so in order to use feh and picom i need to put them in the
+xinitrc instead of dwm itself. small but important thing to remember

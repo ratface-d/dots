@@ -316,4 +316,45 @@ writing for a little long here. i might update this later on in the day. I might
 still havent reinstalled evil-mode. just doesnt feel necessary right now. i still use vim keys on
 the browser and the terminal, and honestly it's not really confusing switching between my emacs 
 binds and the vim binds. it's a little funny actually using vim b/c i still try and use C-c i to
-save the file instead of :w. 
+save the file instead of :w.
+
+hello. i just woke up like 20 minutes ago. trying to learn some of these emacs binds. i might
+write a couple of the confusing ones in [[id:d5f6003e-acfb-4c19-8d84-b052b483620b][emacs notes]] but we'll see. i still wanna look at those 
+obsidian guys to see how they write notes, i just havent yet. i will right now i think. 
+
+hello. i pushed my dotfiles to git just now. going to take a look at what i was thinking of doing
+yesterday in the [[id:d5f6003e-acfb-4c19-8d84-b052b483620b][emacs notes]] file now. 
+
+hello. it is 7:55 pm. i havent done anything at all today. i hate myself. i dont even know why i 
+opened the laptop. i wanted to try and finally do some programming but we all know that that's 
+not gonna happen. whatever i'll try. at least do something
+
+hello. it is. 2:06 am. I'm watching My Name Is Earl. I have the python website pulled up. gonna
+try and make some progress. we'll see what happens. I don't think i've been trying hard enough to
+keep my mood up. i've just been sitting around feeling like shit. we'll see how i feel these next
+couple days. if i dont end up programming then i'll just look for more emacs packages. still need
+to look at how the obsidian guys take notes so i can figure out if org-roam is something i still 
+need. we'll see what happens. still no evil mode btw. i enjoy not having to switch between insert
+and normal mode. and i like that instead of visual mode i can just hit C-spc to highlight text
+yanking and pasting is sitll a little confusing cause it's like. C-y and M-w or something like
+that. I might try and move away from dwm. I like it a lot. but. idk. i wanna try out i3 again I
+think. bspwm is good. if anything i'll move back there but theres a few wms i wanna try. like i
+still havent used qtile or xmonad. maybe i should try qtile. i'm gonna be trying to configure 
+xmonad. honestly just cause I like the name more. lol. if anything. maybe try and use awesomewm
+i've heard good things about that one too. 
+
+
+* <2024-11-09 Sat>
+
+hello. it is 3:14 am. i'm not tired but i dont wanna computer anymore later today i will try and 
+configure xmonad. or just try i3. whichever sounds more fun. will update this again when i wake up
+
+hello. it is 3:25 pm. i havent opened the laptop before now. still watching My Name Is Earl. 
+havent done much today. but. i dont feel like shit about it. which is weird, usually i would wanna
+blow my brains out. it's a nice change. i'm gonna try and configure xmonad again. will update this
+more later today. 
+
+ok i cant get xmonad to build. i've tried a few different changes in the config file but it just
+doesnt wanna build. i'm sure it's because i'm missing something but i dont care enough to fix it.
+i think i'm gonna look for wms that have the swallow functionality. if i cant. maybe i'll try to 
+patch my own dwm again? idk yet. will update this when i figure it out

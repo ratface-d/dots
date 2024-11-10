@@ -5,3 +5,24 @@
 
 to have picom autostart put this is *~/.xinitrc:*
 picom ~/.config/picom &
+
+for remapping caps lock to control in X11 sessions, shove this into the xinitrc/xmodmap:
+Xmodmap:
+clear lock
+clear control
+keycode 66 = Control_L
+add control = Control_L
+add Lock = Control_R
+
+and then the xinitrc:
+xmodmap ~/.Xmodmap
+
+git from command line:
+git init
+git config --global user.name "git name"
+git config --global user.email my@email.com
+
+Once logged in simply:
+git add .
+git commit -m 'commit message'
+git push

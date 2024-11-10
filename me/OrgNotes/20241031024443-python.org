@@ -88,22 +88,21 @@ print("number was 0, exiting")
 #+end_src
 
 #+begin_src python
-
 number = 5
 
-print("Countdown!")
+print("countdown")
 
 while True:
-    
-  print(number)
-  
-  number = number - 1
-  
-  if number <= 0:
-      
-    break
 
-print("Now!")
+  print(number)
+
+  number = number - 1
+
+  if number <= 0:
+
+   break
+
+print("countdown over")
 
 #+end_src
 
