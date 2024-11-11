@@ -1,9 +1,0 @@
-:PROPERTIES:
-:ID:       d5f6003e-acfb-4c19-8d84-b052b483620b
-:END:
-#+title: emacs notes
-1. rebind kill-whole-line 
-2. rebind yank/paste 
-3. think about keeping the visual bell by changing ring-bell-function to 'flash-mode-line from
-'ignore
-

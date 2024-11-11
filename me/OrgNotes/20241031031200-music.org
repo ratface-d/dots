@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       be97a6e7-ed8e-42f5-90c0-ba6988a63610
-:END:
-#+title: music
-
-I will write about music here.
