@@ -183,9 +183,17 @@
 
 #+end_src
 
+** move-text
+#+begin_src emacs-lisp
+(use-package move-text
+:ensure t
+:bind (("C-c p" . move-text-up)
+       ("C-c n" . move-text-down)))
+#+end_src
 
-* Beautification
-** Theming
+
+* Beautificaetion
+** Themes
 *** Modus-Themes
 #+begin_src emacs-lisp
 (use-package modus-themes
@@ -201,8 +209,7 @@
 #+begin_src emacs-lisp
 (use-package ef-themes
 :ensure t
-:config
-(load-theme 'ef-cherie t))
+)
 
 #+end_src
 *** Gruvbox
@@ -211,6 +218,15 @@
 :ensure t)
 
 #+end_src
+*** gruber-darker
+#+begin_src emacs-lisp
+(use-package gruber-darker-theme
+:ensure t
+:config 
+(load-theme 'gruber-darker t))
+
+#+end_src
+
 ** Symbols/Ui-Theming
 *** Doom-Modeline
 #+begin_src emacs-lisp
@@ -302,9 +318,9 @@
   
   (global-set-key (kbd "C-c d") 'dired-jump)
 
-  (global-set-key (kbd "C-c m") 'text-scale-increase)
+  (global-set-key (kbd "C-c t m") 'text-scale-increase)
 
-  (global-set-key (kbd "C-c n") 'text-scale-decrease)
+  (global-set-key (kbd "C-c t n") 'text-scale-decrease)
 
   (global-set-key (kbd "C-c j t") 'beginning-of-buffer)
 
