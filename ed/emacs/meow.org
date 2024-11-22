@@ -302,7 +302,7 @@
 
   (global-set-key (kbd "C-c e") 'delete-window)
 
-  (global-set-key (kbd "C-c h") 'compile)
+  (global-set-key (kbd "C-c z") 'compile)
 
   (global-set-key (kbd "C-c u") 'eval-last-sexp)
 
@@ -325,6 +325,8 @@
   (global-set-key (kbd "C-c j t") 'beginning-of-buffer)
 
   (global-set-key (kbd "C-c j b") 'end-of-buffer)
+
+  (global-set-key (kbd "C-c h") 'woman)
 #+end_src
 
 
