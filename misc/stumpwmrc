@@ -1,0 +1,29 @@
+(in-package :stumpwm)
+
+(setf *default-package* :stumpwm)
+
+(set-module-dir "~/.stumpwm.d/modules/")
+
+(setf *window-border-style* :thin
+      *mouse-focus-priority* :click
+      *float-window-modifier* :SUPER)
+ 
+(setf *input-window-gravity*     :top
+      *message-window-padding*   10
+      *message-window-y-padding* 10
+      *message-window-gravity*   :top)
+
+(set-prefix-key (kbd "C-."))
+
+(load-module "swm-gaps")
+
+(setf swm-gaps:*head-gaps-size*  0
+      swm-gaps:*inner-gaps-size* 0
+      swm-gaps:*outer-gaps-size* 5)
+
+(when *initializing*
+  (swm-gaps:toggle-gaps))
+
+(define-key *top-map* (kbd "C-,") "exec firefox-esr")
+
+(define-key *top-map* (kbd "C-;") "exec st")
